@@ -1,0 +1,327 @@
+html, body {
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+.wrapper {
+    width: 1170px;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+}
+
+
+.main-page {
+    background: linear-gradient(269.59deg, #A5DEFF 0.34%, #FCFEFF 99.64%);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    margin-top: 34px;
+    margin-bottom: 58;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.logo-text {
+    margin-left: 18px;
+}
+
+.banderogus-container{
+    background: #FFFFFF;
+    padding: 68px 56px;
+    align-self: center;
+}
+
+
+.banderogus-title{
+    color: #242B36;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 72px;
+}
+
+.banderogus-greeting {
+    color: #242B36;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+.banderogus-start-text{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    color: #FF6B0A;
+    margin-bottom: 48px;
+}
+
+
+.banderogus-descr {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #242B36;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.banderogus-launch {
+    background: #FF6B0A;
+    border-radius: 8px;
+    padding: 12pz 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    cursor: pointer;
+    width: 172px;
+    height: 48px;
+    left: 151px;
+    top: 532px;
+}
+
+.main-page-row {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.banderogus-image {
+    /* при зменшенні екрана гусь буде знизу */
+    align-self: flex-end;
+}
+
+.gus-facts {
+    padding: 52px 0 72px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.gus-title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #242B36;
+    margin: 16px 0;
+}
+
+.gus-descr {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #242B36;
+    width: 875px;
+    margin-top: 16px;
+}
+
+.gus-facts-container {
+    width: 1170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gus-fact-item {
+    width: 33%;
+}
+
+.gus-fact-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #242B36;
+    margin-top: 12px;
+    margin-bottom: 32px;
+}
+
+.gus-fact-descr {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #242B36;
+    width: 280px;
+}
+.victory-bgd {
+    background: linear-gradient(269.59deg, #D7F0FF 0.34%, #FCFEFF 99.64%);
+    width: 1170px;
+    padding: 72px 0;
+    margin-bottom: 72px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.victory-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.victory-title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #242B36;
+    margin: 16px 0;
+}
+
+.victory-descr {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #242B36;
+    width: 875px;
+}
+
+.modal-bgd {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(107, 105, 105, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-form-container {
+    background: #D9D9D9;
+    padding: 32px 92px 60px 92px;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    color: #242B36;
+    font-size: 20px;
+    cursor: pointer;
+    border: 0;
+    background: none;
+}
+
+.modal-form-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    color: #000000;
+    margin: 32px 0 12px 0;
+}
+
+.modal-form-descr {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    margin-bottom: 24px;
+}
+
+.modal-form-field {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.modal-field-name {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+.modal-field-input {
+    width: 422px;
+    height: 48px;
+    left: 469px;
+    top: 358px;
+    background: #FFFEFE;
+    border: 1px solid #005BBB;
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+    padding: 4px 8px;
+}
+
+
+.modal-form-btn {
+    background: #FF6B0A;
+    border-radius: 8px;
+    padding: 12pz 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    cursor: pointer;
+    width: 172px;
+    height: 48px;
+    left: 151px;
+    top: 532px;
+    margin-top: 24px;
+}
+
+.modal-form-t {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    margin-top: 32px;
+    margin-bottom: 86px;
+}
+
+.modal-form-d {
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 72px;
+    text-align: center;
+    color: #FF6B0A;
+    margin-bottom: 100px;
+}
+
+
+.modal-active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.gus-anim {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    margin-bottom: auto;
+    margin-top: auto;
+    width: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
